@@ -66,8 +66,8 @@ namespace esphome
             {
                 if (weatherData.temp_ok)
                 {
-                    temperature_sensor->publish_state(weatherData.temp_c);
-                    humidity_sensor->publish_state(weatherData.humidity);
+                    this->temperature_sensor_->publish_state(weatherData.temp_c);
+                    this->humidity_sensor_->publish_state(weatherData.humidity);
                 }
                 if (weatherData.wind_ok)
                 {
