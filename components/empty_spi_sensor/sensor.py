@@ -9,8 +9,8 @@ EmptySPISensor = empty_spi_sensor_ns.class_(
     "EmptySPISensor", cg.PollingComponent,
 )
 
-CONF_SENSOR1 = "temperature"
-CONF_SENSOR2 = "humidity"
+CONF_SENSOR1 = "temperature_sensor"
+CONF_SENSOR2 = "humidity_sensor"
 
 
 CONFIG_SCHEMA = cv.Schema(
