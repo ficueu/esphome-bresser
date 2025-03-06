@@ -5,9 +5,9 @@
 #include "esphome/components/spi/spi.h"
 
 namespace esphome {
-namespace bresser {
+namespace empty_spi_sensor {
 
-class Bresser : public sensor::Sensor,
+class EmptySPISensor : public sensor::Sensor,
                        public PollingComponent,
                        public spi::SPIDevice<spi::BIT_ORDER_MSB_FIRST, spi::CLOCK_POLARITY_LOW, spi::CLOCK_PHASE_LEADING,
                                             spi::DATA_RATE_1KHZ> {
@@ -18,5 +18,5 @@ class Bresser : public sensor::Sensor,
   void dump_config() override;
 };
 
-}  // namespace bresser
+}  // namespace empty_spi_sensor
 }  // namespace esphome
