@@ -7,7 +7,6 @@ namespace esphome
 {
   namespace empty_spi_sensor
   {
-
     class EmptySPISensor : public sensor::Sensor,
                            public PollingComponent,
     {
