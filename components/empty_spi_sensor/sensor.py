@@ -1,13 +1,12 @@
 import esphome.codegen as cg
 import esphome.config_validation as cv
-from esphome.components import spi, sensor
+from esphome.components import sensor
 from esphome.const import ICON_EMPTY, UNIT_EMPTY
 
-DEPENDENCIES = ["spi"]
 
 empty_spi_sensor_ns = cg.esphome_ns.namespace("empty_spi_sensor")
 EmptySPISensor = empty_spi_sensor_ns.class_(
-    "EmptySPISensor", cg.PollingComponent, spi.SPIDevice
+    "EmptySPISensor", cg.PollingComponent,
 )
 
 CONF_SENSOR1 = "temperature"
